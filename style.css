@@ -120,3 +120,12 @@ select {
   margin-left: 1rem;
   border: 4px solid;
 }
+
+@keyframes playTrack {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}

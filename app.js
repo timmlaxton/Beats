@@ -15,6 +15,10 @@ class DrumKit {
   repeat() {
     let step = this.index % 9;
     const activeBars = document.querySelectorAll(`.b${step}`);
+    //Loop over pads
+    activeBars.forEach((bar) => {
+      bar.style.animation = `playTrack 0.3s alternate ease-in-out`;
+    });
     this.index++;
   }
   start() {
