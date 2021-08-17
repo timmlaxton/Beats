@@ -15,11 +15,16 @@ svg {
 
 .kick-pad,
 .snare-pad,
-.hihat-pad {
+.hihat-pad,
+.clap-pad {
   width: 5rem;
   height: 5rem;
   margin: 1rem 0.5rem;
   cursor: pointer;
+}
+
+.clap-pad {
+  background: rgb(211, 216, 211);
 }
 
 .kick-pad {
@@ -44,7 +49,8 @@ svg {
 
 .kick-track,
 .snare-track,
-.hihat-track {
+.hihat-track,
+.clap-track {
   display: flex;
   align-items: center;
   width: 70%;
@@ -54,7 +60,8 @@ svg {
 
 .kick,
 .snare,
-.hihat {
+.hihat,
+.clap {
   display: flex;
 }
 
@@ -92,6 +99,10 @@ svg {
   background: rgb(241, 4, 4);
 }
 
+.clap-pad.active {
+  background: rgb(3, 238, 3);
+}
+
 .kick-pad {
   background: rgb(147, 147, 238);
 }
@@ -102,6 +113,10 @@ svg {
 
 .hihat-pad {
   background: rgb(226, 108, 108);
+}
+
+.clap-pad {
+  background: rgb(211, 216, 211);
 }
 
 .play {

@@ -5,6 +5,7 @@ class DrumKit {
     this.kickAudio = document.querySelector(".kick-sound");
     this.snareAudio = document.querySelector(".snare-sound");
     this.hihatAudio = document.querySelector(".hihat-sound");
+    this.clapAudio = document.querySelector(".clap-sound");
     this.index = 0;
     this.bpm = 150;
   }
@@ -27,6 +28,9 @@ class DrumKit {
         }
         if (bar.classList.contains("hihat-pad")) {
           this.hihatAudio.play();
+        }
+        if (bar.classList.contains("clap-pad")) {
+          this.clapAudio.play();
         }
       }
     });
